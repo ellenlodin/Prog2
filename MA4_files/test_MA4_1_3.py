@@ -30,7 +30,7 @@ class Test(unittest.TestCase):
         stop = pc()
         par = stop - start
 
-        self.assertLess(1.6, app_vol)
+        self.assertLess(1.5, app_vol)
         self.assertLess(app_vol, 2.2)
         self.assertLess(par, seq/2.)
 

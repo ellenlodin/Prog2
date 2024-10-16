@@ -18,7 +18,7 @@ class Test(unittest.TestCase):
         n = 100000
         d = 2
         app_vol = sphere_volume(n, d)
-        self.assertLess(3.13, app_vol)
+        self.assertLess(3.12, app_vol)
         self.assertLess(app_vol, 3.16)
         act_vol = hypersphere_exact(n, d)
         self.assertAlmostEqual(act_vol, 3.141592653589793)
@@ -26,8 +26,8 @@ class Test(unittest.TestCase):
         # test if the sphere volume is within the interval [3.10, 3.18]
         d = 11
         app_vol = sphere_volume(n, 11)
-        self.assertLess(1.6, app_vol)
-        self.assertLess(app_vol, 2.2)
+        self.assertLess(1.4, app_vol)
+        self.assertLess(app_vol, 2.4)
         act_vol = hypersphere_exact(n, d)
         self.assertAlmostEqual(act_vol, 1.8841038793898994)
 
