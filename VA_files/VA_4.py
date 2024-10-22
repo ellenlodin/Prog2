@@ -28,12 +28,6 @@ n1 = np.linspace(20, 30)
 t_py = []
 t_numba = []
 
-fib_res_py = fib_py(47)
-fib_res_numba = fib_numba(47)
-
-print(f'Python: fib(47)= {fib_res_py}')
-print(f'Numba: fib(47)= {fib_res_numba}')
-
 for i in n1: 
 	start1 = pc()
 	fib_py(i)
@@ -54,3 +48,10 @@ plt.title('Fibonacci Execution Time: Python vs Numba')
 plt.legend()
 plt.savefig('Fibonacci Execution Time - Python vs Numba.png')
 plt.show()
+
+#fib_res_py = fib_py(47)
+fib_res_numba = fib_numba(47)
+
+#print(f'Python: fib(47)= {fib_res_py}')
+print(f'Numba: fib(47)= {fib_res_numba}')
+#fib(47)= 2971215073
