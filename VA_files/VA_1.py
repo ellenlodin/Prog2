@@ -45,7 +45,6 @@ def zippa(l1: list, l2: list) -> list:
     else:
         return [lst1[0] , lst2[0]] + zippa(lst1[1:], lst2[1:])
         
-
 def main():
     print('\nCode that demonstates my implementations\n')
     coins = [1, 5, 10, 50, 100]

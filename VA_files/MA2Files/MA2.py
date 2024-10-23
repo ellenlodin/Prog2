@@ -58,32 +58,18 @@ def log(x):
         return math.log(x)
     
 def fib(x):
-    memory = {}
+    memory = {0: 0, 1: 1}  
+
     def _fib(x):
         if x < 0:
             raise EvaluationError(f'Argument to fib is {x}. Must be integer >= 0')
-        elif x == 0:
-            return 0
-        elif x == 1:
-            return 1
-        else:
-            key1 = x - 1
-            key2 = x - 2
-
-            if key1 in memory:
-                k1 = memory[key1]
-            else: 
-                k1 = _fib(key1)
-                memory[key1] = k1
-
-            if key2 in memory: 
-                k2 = memory[key2]
-            else:
-                k2 = _fib(key2)
-                memory[key2] = k2
-
-            return k1 + k2
         
+        elif x in memory:  
+            return memory[x]
+
+        memory[x] = _fib(x - 1) + _fib(x - 2)
+        return memory[x]
+    
     return _fib(x)
    
 #Functions n
