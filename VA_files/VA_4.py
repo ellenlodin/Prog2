@@ -23,7 +23,7 @@ def fib_numba(n):
 	else:
 		return(fib_numba(n-1) + fib_numba(n-2))
 
-n1 = np.linspace(20, 30)
+n1 = np.linspace(20, 45)
 
 t_py = []
 t_numba = []

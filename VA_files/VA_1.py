@@ -1,7 +1,7 @@
 """
 Solutions to module VA 1
-Student: 
-Mail:
+Student: Ellen Lodin
+Mail: ellen.lodin@telia.com
 """
 
 from time import perf_counter as pc
@@ -9,7 +9,7 @@ import sys
 sys.setrecursionlimit(10010)
 
 def exchange(a, coins) -> list: 
-    """ Count possible way to exchange a with the coins in coins. Use memoization"""
+    """ Count possible way to exchange a with the coins in coins. Use memorization"""
     memory = {}
     index = 0
     def _exchange(a, index):

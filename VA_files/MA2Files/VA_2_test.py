@@ -66,10 +66,19 @@ Answers can be provided here:
 
 What is the output of the calculator if the line is std() without arguments?
 
+*** Evaluation error:  Missing data
+Error occurred at '' just after ')'
+
 Are you able to change the value of PI? 
+
+Yes
 
 If yes, how can you fix this?
 
+New global list + if in assignment
+
 What technique did you use to calculate large Fibonacci numbers?
+
+Memorization
 
 """

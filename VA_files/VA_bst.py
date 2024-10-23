@@ -127,6 +127,7 @@ def main():
     plt.ylabel('Value')
     plt.title('n vs IPL in theory, calculated IPL and tree height')
     plt.legend()
+    plt.savefig('n vs IPL in theory, calculated IPL and tree height.png')
     plt.show()
 
     
@@ -139,6 +140,7 @@ if __name__ == "__main__":
 Results for ipl of random trees
 ===============================
 How well does that agree with the theory?
+
 quite well, since the diffrence is constant about = 0.8 
 
 
